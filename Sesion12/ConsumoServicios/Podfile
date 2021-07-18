@@ -1,0 +1,8 @@
+
+target 'ConsumoServicios' do
+
+  use_frameworks!
+
+  pod 'Alamofire'
+  
+end

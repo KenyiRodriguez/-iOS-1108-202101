@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Movie View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ListMovieViewController" customModule="ConsumoServicios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g3F-4D-EYQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="10" id="p7r-CC-gvR">
+                                    <size key="itemSize" width="180" height="333"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="20" maxX="10" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="TUq-yt-bku" customClass="MovieCollectionViewCell" customModule="ConsumoServicios" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="20" width="180" height="333"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jLG-l4-gfY">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="333"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 de Junio del 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buW-xE-vHp">
+                                                    <rect key="frame" x="0.0" y="316" width="180" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad Boys for life Bad Boys for life " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vF-JU-4gQ">
+                                                    <rect key="frame" x="0.0" y="274.5" width="180" height="38.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38.5" id="bTh-Gz-vTp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-gZ-VSw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="264.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-Vw-uzs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="264.5"/>
+                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ddg-Vw-uzs" firstAttribute="top" secondItem="cq7-gZ-VSw" secondAttribute="top" id="4fd-9u-peX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ddg-Vw-uzs" secondAttribute="trailing" id="d72-1E-xU8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ddg-Vw-uzs" secondAttribute="bottom" id="eqS-jS-dLh"/>
+                                                        <constraint firstItem="ddg-Vw-uzs" firstAttribute="leading" secondItem="cq7-gZ-VSw" secondAttribute="leading" id="shN-Xc-ZhE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="buW-xE-vHp" firstAttribute="leading" secondItem="jLG-l4-gfY" secondAttribute="leading" id="3nV-IK-s3Y"/>
+                                                <constraint firstItem="buW-xE-vHp" firstAttribute="top" secondItem="2vF-JU-4gQ" secondAttribute="bottom" constant="3" id="6QT-2b-BMk"/>
+                                                <constraint firstItem="2vF-JU-4gQ" firstAttribute="top" secondItem="cq7-gZ-VSw" secondAttribute="bottom" constant="10" id="EMy-ho-LhG"/>
+                                                <constraint firstItem="2vF-JU-4gQ" firstAttribute="leading" secondItem="jLG-l4-gfY" secondAttribute="leading" id="HX7-xG-dGf"/>
+                                                <constraint firstAttribute="trailing" secondItem="buW-xE-vHp" secondAttribute="trailing" id="KIj-2P-XU4"/>
+                                                <constraint firstAttribute="trailing" secondItem="cq7-gZ-VSw" secondAttribute="trailing" id="RzZ-mf-RJB"/>
+                                                <constraint firstAttribute="trailing" secondItem="2vF-JU-4gQ" secondAttribute="trailing" id="jGF-LU-PDF"/>
+                                                <constraint firstItem="cq7-gZ-VSw" firstAttribute="top" secondItem="jLG-l4-gfY" secondAttribute="top" id="vfs-gA-A1z"/>
+                                                <constraint firstAttribute="bottom" secondItem="buW-xE-vHp" secondAttribute="bottom" id="y2i-Db-aax"/>
+                                                <constraint firstItem="cq7-gZ-VSw" firstAttribute="leading" secondItem="jLG-l4-gfY" secondAttribute="leading" id="zIx-2W-Qih"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="180" height="333"/>
+                                        <connections>
+                                            <outlet property="imageContent" destination="cq7-gZ-VSw" id="f96-t7-YOH"/>
+                                            <outlet property="imgMovie" destination="ddg-Vw-uzs" id="Y54-u9-jlm"/>
+                                            <outlet property="lblName" destination="2vF-JU-4gQ" id="muc-Vx-JWE"/>
+                                            <outlet property="lblReleaseDate" destination="buW-xE-vHp" id="khu-X9-CEt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="cI7-Je-cyZ"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="TmX-1n-d9O"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g3F-4D-EYQ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="D6b-w4-3M9"/>
+                            <constraint firstAttribute="bottom" secondItem="g3F-4D-EYQ" secondAttribute="bottom" id="En1-Ee-Ezf"/>
+                            <constraint firstItem="g3F-4D-EYQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mA4-s8-8Ph"/>
+                            <constraint firstItem="g3F-4D-EYQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mqW-eT-nol"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clvMovies" destination="g3F-4D-EYQ" id="0ae-ff-mlU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
